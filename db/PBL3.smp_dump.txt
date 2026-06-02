@@ -1,0 +1,12 @@
+
+State Machine - |top_fsm_toda|fsm2_qualidade1:FSM2|state
+Name state.S0_HOLD state.S2_CQ state.S1_VEDANDO 
+state.S0_HOLD 0 0 0 
+state.S1_VEDANDO 1 0 1 
+state.S2_CQ 1 1 0 
+
+State Machine - |top_fsm_toda|fsm_enchimento:FSM1|state
+Name state.S0_IDLE state.S2_ENCHENDO state.S1_GARRAFA 
+state.S0_IDLE 0 0 0 
+state.S1_GARRAFA 1 0 1 
+state.S2_ENCHENDO 1 1 0 

@@ -1,0 +1,680 @@
+|top_fsm_toda
+clk => clk.IN1
+rst_n => rst_n.IN10
+START_BTN => START_BTN.IN1
+LIMPA_SUJEIRA => LIMPA_SUJEIRA.IN1
+TEM_GARRAFA => TEM_GARRAFA.IN1
+GARRAFA_CHEIA => GARRAFA_CHEIA.IN1
+GARRAFA_VEDADA => GARRAFA_VEDADA.IN1
+CQ_OK => CQ_OK.IN1
+CQ_NOK => CQ_NOK.IN1
+MAIS_15_AUTO => MAIS_15_AUTO.IN1
+MANUAL_ADD => MANUAL_ADD.IN1
+MOTOR << fsm_enchimento:FSM1.MOTOR
+EV << fsm_enchimento:FSM1.EV
+VE << fsm2_qualidade1:FSM2.VE
+DEC_ROLHA << DEC_ROLHA.DB_MAX_OUTPUT_PORT_TYPE
+REJEITA_GARRAFA << fsm2_qualidade1:FSM2.REJEITA_GARRAFA
+INC_DUZIA << INC_DUZIA.DB_MAX_OUTPUT_PORT_TYPE
+ESTEIRA_SUJA << fsm_enchimento:FSM1.ESTEIRA_SUJA
+LED_ALARME << fsm_enchimento:FSM1.LED_ALARME
+EST1[0] << fsm_enchimento:FSM1.E0
+EST1[1] << fsm_enchimento:FSM1.E1
+EST2[0] << fsm2_qualidade1:FSM2.E0
+EST2[1] << fsm2_qualidade1:FSM2.E1
+seg_dezena_rolhas[0] << bin_to_7seg:magazine_display.seg_dezena
+seg_dezena_rolhas[1] << bin_to_7seg:magazine_display.seg_dezena
+seg_dezena_rolhas[2] << bin_to_7seg:magazine_display.seg_dezena
+seg_dezena_rolhas[3] << bin_to_7seg:magazine_display.seg_dezena
+seg_dezena_rolhas[4] << bin_to_7seg:magazine_display.seg_dezena
+seg_dezena_rolhas[5] << bin_to_7seg:magazine_display.seg_dezena
+seg_dezena_rolhas[6] << bin_to_7seg:magazine_display.seg_dezena
+seg_unidade_rolhas[0] << bin_to_7seg:magazine_display.seg_unidade
+seg_unidade_rolhas[1] << bin_to_7seg:magazine_display.seg_unidade
+seg_unidade_rolhas[2] << bin_to_7seg:magazine_display.seg_unidade
+seg_unidade_rolhas[3] << bin_to_7seg:magazine_display.seg_unidade
+seg_unidade_rolhas[4] << bin_to_7seg:magazine_display.seg_unidade
+seg_unidade_rolhas[5] << bin_to_7seg:magazine_display.seg_unidade
+seg_unidade_rolhas[6] << bin_to_7seg:magazine_display.seg_unidade
+seg_unidade_disp[0] << bin_to_7seg:dispensador_display.seg_unidade
+seg_unidade_disp[1] << bin_to_7seg:dispensador_display.seg_unidade
+seg_unidade_disp[2] << bin_to_7seg:dispensador_display.seg_unidade
+seg_unidade_disp[3] << bin_to_7seg:dispensador_display.seg_unidade
+seg_unidade_disp[4] << bin_to_7seg:dispensador_display.seg_unidade
+seg_unidade_disp[5] << bin_to_7seg:dispensador_display.seg_unidade
+seg_unidade_disp[6] << bin_to_7seg:dispensador_display.seg_unidade
+seg_dezena_disp[0] << bin_to_7seg:dispensador_display.seg_dezena
+seg_dezena_disp[1] << bin_to_7seg:dispensador_display.seg_dezena
+seg_dezena_disp[2] << bin_to_7seg:dispensador_display.seg_dezena
+seg_dezena_disp[3] << bin_to_7seg:dispensador_display.seg_dezena
+seg_dezena_disp[4] << bin_to_7seg:dispensador_display.seg_dezena
+seg_dezena_disp[5] << bin_to_7seg:dispensador_display.seg_dezena
+seg_dezena_disp[6] << bin_to_7seg:dispensador_display.seg_dezena
+seg_unidade_duzias[0] << contador_duzias:CONT_DUZ.seg_unidade
+seg_unidade_duzias[1] << contador_duzias:CONT_DUZ.seg_unidade
+seg_unidade_duzias[2] << contador_duzias:CONT_DUZ.seg_unidade
+seg_unidade_duzias[3] << contador_duzias:CONT_DUZ.seg_unidade
+seg_unidade_duzias[4] << contador_duzias:CONT_DUZ.seg_unidade
+seg_unidade_duzias[5] << contador_duzias:CONT_DUZ.seg_unidade
+seg_unidade_duzias[6] << contador_duzias:CONT_DUZ.seg_unidade
+seg_dezena_duzias[0] << contador_duzias:CONT_DUZ.seg_dezena
+seg_dezena_duzias[1] << contador_duzias:CONT_DUZ.seg_dezena
+seg_dezena_duzias[2] << contador_duzias:CONT_DUZ.seg_dezena
+seg_dezena_duzias[3] << contador_duzias:CONT_DUZ.seg_dezena
+seg_dezena_duzias[4] << contador_duzias:CONT_DUZ.seg_dezena
+seg_dezena_duzias[5] << contador_duzias:CONT_DUZ.seg_dezena
+seg_dezena_duzias[6] << contador_duzias:CONT_DUZ.seg_dezena
+
+
+|top_fsm_toda|divfreq:comb_3
+clk => clk.IN1
+out_clk <= T_flipflop:comb_23.port3
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_3
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_4
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_5
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_6
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_7
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_8
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_9
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_10
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_11
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_12
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_13
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_14
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_15
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_16
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_17
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_18
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_19
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_20
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_21
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_22
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|divfreq:comb_3|T_flipflop:comb_23
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+t => q~reg0.ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|fsm_enchimento:FSM1
+clk => done_reg.CLK
+clk => ESTEIRA_SUJA~reg0.CLK
+clk => running.CLK
+clk => start_prev.CLK
+clk => start_sync1.CLK
+clk => start_sync0.CLK
+clk => state~1.DATAIN
+rst_n => done_reg.ACLR
+rst_n => ESTEIRA_SUJA~reg0.ACLR
+rst_n => running.ACLR
+rst_n => state~3.DATAIN
+START_BTN => start_sync0.DATAIN
+LIMPA_SUJEIRA => ESTEIRA_SUJA.OUTPUTSELECT
+ALARME => next_state.S0_IDLE.IN1
+ALARME => LED_ALARME.DATAIN
+ALARME => MOTOR.IN1
+ALARME => EV.IN1
+ALARME => always4.IN1
+TEM_GARRAFA => next_state.DATAA
+TEM_GARRAFA => next_state.DATAA
+GARRAFA_CHEIA => always4.IN0
+GARRAFA_CHEIA => next_state.DATAA
+GARRAFA_CHEIA => next_state.DATAA
+STOP_MOTOR => MOTOR.IN1
+EM_CQ => MOTOR.IN1
+E1 <= E1.DB_MAX_OUTPUT_PORT_TYPE
+E0 <= E0.DB_MAX_OUTPUT_PORT_TYPE
+MOTOR <= MOTOR.DB_MAX_OUTPUT_PORT_TYPE
+EV <= EV.DB_MAX_OUTPUT_PORT_TYPE
+FSM1_DONE <= done_reg.DB_MAX_OUTPUT_PORT_TYPE
+LED_ALARME <= ALARME.DB_MAX_OUTPUT_PORT_TYPE
+ESTEIRA_SUJA <= ESTEIRA_SUJA~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|pulso_1clk:p_fsm1
+clk => pulso~reg0.CLK
+clk => sinal_delay.CLK
+rst_n => pulso~reg0.ACLR
+rst_n => sinal_delay.ACLR
+sinal => pulso.IN1
+sinal => sinal_delay.DATAIN
+pulso <= pulso~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|fsm2_qualidade1:FSM2
+clk => inc_duzia_latch.CLK
+clk => rejeita_latch.CLK
+clk => state~1.DATAIN
+rst_n => inc_duzia_latch.ACLR
+rst_n => rejeita_latch.ACLR
+rst_n => state~3.DATAIN
+START_VED => Selector1.IN2
+START_VED => Selector0.IN0
+ALARME => next_state.OUTPUTSELECT
+ALARME => next_state.OUTPUTSELECT
+ALARME => next_state.OUTPUTSELECT
+ALARME => next_state.OUTPUTSELECT
+ALARME => next_state.S0_HOLD.OUTPUTSELECT
+ALARME => next_state.S1_VEDANDO.OUTPUTSELECT
+ALARME => next_state.S2_CQ.OUTPUTSELECT
+ALARME => DONE_FSM2_HOLD.OUTPUTSELECT
+ALARME => Selector0.IN2
+GARRAFA_VEDADA => next_state.DATAA
+GARRAFA_VEDADA => next_state.DATAA
+CQ_OK => always0.IN0
+CQ_OK => always1.IN0
+CQ_NOK => always0.IN0
+CQ_NOK => always1.IN1
+E0 <= E0.DB_MAX_OUTPUT_PORT_TYPE
+E1 <= E1.DB_MAX_OUTPUT_PORT_TYPE
+VE <= VE.DB_MAX_OUTPUT_PORT_TYPE
+DEC_ROLHA <= DEC_ROLHA.DB_MAX_OUTPUT_PORT_TYPE
+REJEITA_GARRAFA <= rejeita_latch.DB_MAX_OUTPUT_PORT_TYPE
+INC_DUZIA <= inc_duzia_latch.DB_MAX_OUTPUT_PORT_TYPE
+DONE_FSM2_HOLD <= DONE_FSM2_HOLD.DB_MAX_OUTPUT_PORT_TYPE
+EM_CQ <= EM_CQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|pulso_1clk:p_cqok
+clk => pulso~reg0.CLK
+clk => sinal_delay.CLK
+rst_n => pulso~reg0.ACLR
+rst_n => sinal_delay.ACLR
+sinal => pulso.IN1
+sinal => sinal_delay.DATAIN
+pulso <= pulso~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|pulso_1clk:p_cqnok
+clk => pulso~reg0.CLK
+clk => sinal_delay.CLK
+rst_n => pulso~reg0.ACLR
+rst_n => sinal_delay.ACLR
+sinal => pulso.IN1
+sinal => sinal_delay.DATAIN
+pulso <= pulso~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|pulso_1clk:p15
+clk => pulso~reg0.CLK
+clk => sinal_delay.CLK
+rst_n => pulso~reg0.ACLR
+rst_n => sinal_delay.ACLR
+sinal => pulso.IN1
+sinal => sinal_delay.DATAIN
+pulso <= pulso~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|pulso_1clk:p_dec
+clk => pulso~reg0.CLK
+clk => sinal_delay.CLK
+rst_n => pulso~reg0.ACLR
+rst_n => sinal_delay.ACLR
+sinal => pulso.IN1
+sinal => sinal_delay.DATAIN
+pulso <= pulso~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|gerencia_rolhas:GER
+clk => alarme_sem_rolha~reg0.CLK
+clk => magazine_count[0]~reg0.CLK
+clk => magazine_count[1]~reg0.CLK
+clk => magazine_count[2]~reg0.CLK
+clk => magazine_count[3]~reg0.CLK
+clk => magazine_count[4]~reg0.CLK
+clk => dispenser_count[0]~reg0.CLK
+clk => dispenser_count[1]~reg0.CLK
+clk => dispenser_count[2]~reg0.CLK
+clk => dispenser_count[3]~reg0.CLK
+clk => dispenser_count[4]~reg0.CLK
+clk => dispenser_count[5]~reg0.CLK
+rst_n => alarme_sem_rolha~reg0.ACLR
+rst_n => magazine_count[0]~reg0.ACLR
+rst_n => magazine_count[1]~reg0.ACLR
+rst_n => magazine_count[2]~reg0.ACLR
+rst_n => magazine_count[3]~reg0.PRESET
+rst_n => magazine_count[4]~reg0.ACLR
+rst_n => dispenser_count[0]~reg0.ACLR
+rst_n => dispenser_count[1]~reg0.PRESET
+rst_n => dispenser_count[2]~reg0.ACLR
+rst_n => dispenser_count[3]~reg0.PRESET
+rst_n => dispenser_count[4]~reg0.ACLR
+rst_n => dispenser_count[5]~reg0.ACLR
+dec_rolha => always0.IN1
+dec_rolha => always0.IN1
+dec_rolha => always0.IN1
+manual_add => always0.IN1
+auto_add15 => always0.IN1
+auto_add15 => always0.IN1
+magazine_count[0] <= magazine_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magazine_count[1] <= magazine_count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magazine_count[2] <= magazine_count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magazine_count[3] <= magazine_count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magazine_count[4] <= magazine_count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dispenser_count[0] <= dispenser_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dispenser_count[1] <= dispenser_count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dispenser_count[2] <= dispenser_count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dispenser_count[3] <= dispenser_count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dispenser_count[4] <= dispenser_count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dispenser_count[5] <= dispenser_count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+alarme_sem_rolha <= alarme_sem_rolha~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready30 <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|bin_to_7seg:magazine_display
+bin_in[0] => bin_in[0].IN1
+bin_in[1] => bin_in[1].IN1
+bin_in[2] => bin_in[2].IN1
+bin_in[3] => bin_in[3].IN1
+bin_in[4] => bin_in[4].IN1
+bin_in[5] => bin_in[5].IN1
+bin_in[6] => bin_in[6].IN1
+seg_dezena[0] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[1] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[2] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[3] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[4] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[5] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[6] <= bcd_to_7seg:dec_dezena.seg
+seg_unidade[0] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[1] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[2] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[3] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[4] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[5] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[6] <= bcd_to_7seg:dec_unidade.seg
+
+
+|top_fsm_toda|bin_to_7seg:magazine_display|bin_to_bcd:converter
+bin[0] => Div0.IN10
+bin[0] => Mod0.IN10
+bin[1] => Div0.IN9
+bin[1] => Mod0.IN9
+bin[2] => Div0.IN8
+bin[2] => Mod0.IN8
+bin[3] => Div0.IN7
+bin[3] => Mod0.IN7
+bin[4] => Div0.IN6
+bin[4] => Mod0.IN6
+bin[5] => Div0.IN5
+bin[5] => Mod0.IN5
+bin[6] => Div0.IN4
+bin[6] => Mod0.IN4
+dezena[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|bin_to_7seg:magazine_display|bcd_to_7seg:dec_dezena
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|bin_to_7seg:magazine_display|bcd_to_7seg:dec_unidade
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|bin_to_7seg:dispensador_display
+bin_in[0] => bin_in[0].IN1
+bin_in[1] => bin_in[1].IN1
+bin_in[2] => bin_in[2].IN1
+bin_in[3] => bin_in[3].IN1
+bin_in[4] => bin_in[4].IN1
+bin_in[5] => bin_in[5].IN1
+bin_in[6] => bin_in[6].IN1
+seg_dezena[0] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[1] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[2] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[3] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[4] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[5] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[6] <= bcd_to_7seg:dec_dezena.seg
+seg_unidade[0] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[1] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[2] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[3] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[4] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[5] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[6] <= bcd_to_7seg:dec_unidade.seg
+
+
+|top_fsm_toda|bin_to_7seg:dispensador_display|bin_to_bcd:converter
+bin[0] => Div0.IN10
+bin[0] => Mod0.IN10
+bin[1] => Div0.IN9
+bin[1] => Mod0.IN9
+bin[2] => Div0.IN8
+bin[2] => Mod0.IN8
+bin[3] => Div0.IN7
+bin[3] => Mod0.IN7
+bin[4] => Div0.IN6
+bin[4] => Mod0.IN6
+bin[5] => Div0.IN5
+bin[5] => Mod0.IN5
+bin[6] => Div0.IN4
+bin[6] => Mod0.IN4
+dezena[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|bin_to_7seg:dispensador_display|bcd_to_7seg:dec_dezena
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|bin_to_7seg:dispensador_display|bcd_to_7seg:dec_unidade
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|contador_garrafas:CONT_GAR
+clk => pulso_duzia~reg0.CLK
+clk => count_garrafas[0].CLK
+clk => count_garrafas[1].CLK
+clk => count_garrafas[2].CLK
+clk => count_garrafas[3].CLK
+rst_n => pulso_duzia~reg0.ACLR
+rst_n => count_garrafas[0].ACLR
+rst_n => count_garrafas[1].ACLR
+rst_n => count_garrafas[2].ACLR
+rst_n => count_garrafas[3].ACLR
+inc_garrafa => pulso_duzia.OUTPUTSELECT
+inc_garrafa => count_garrafas[3].ENA
+inc_garrafa => count_garrafas[2].ENA
+inc_garrafa => count_garrafas[1].ENA
+inc_garrafa => count_garrafas[0].ENA
+pulso_duzia <= pulso_duzia~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|contador_duzias:CONT_DUZ
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+clk => count[4]~reg0.CLK
+clk => count[5]~reg0.CLK
+clk => count[6]~reg0.CLK
+rst_n => count[0]~reg0.ACLR
+rst_n => count[1]~reg0.ACLR
+rst_n => count[2]~reg0.ACLR
+rst_n => count[3]~reg0.ACLR
+rst_n => count[4]~reg0.ACLR
+rst_n => count[5]~reg0.ACLR
+rst_n => count[6]~reg0.ACLR
+inc_duzia => count.OUTPUTSELECT
+inc_duzia => count.OUTPUTSELECT
+inc_duzia => count.OUTPUTSELECT
+inc_duzia => count.OUTPUTSELECT
+inc_duzia => count.OUTPUTSELECT
+inc_duzia => count.OUTPUTSELECT
+inc_duzia => count.OUTPUTSELECT
+count[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+seg_dezena[0] <= bin_to_7seg:display.seg_dezena
+seg_dezena[1] <= bin_to_7seg:display.seg_dezena
+seg_dezena[2] <= bin_to_7seg:display.seg_dezena
+seg_dezena[3] <= bin_to_7seg:display.seg_dezena
+seg_dezena[4] <= bin_to_7seg:display.seg_dezena
+seg_dezena[5] <= bin_to_7seg:display.seg_dezena
+seg_dezena[6] <= bin_to_7seg:display.seg_dezena
+seg_unidade[0] <= bin_to_7seg:display.seg_unidade
+seg_unidade[1] <= bin_to_7seg:display.seg_unidade
+seg_unidade[2] <= bin_to_7seg:display.seg_unidade
+seg_unidade[3] <= bin_to_7seg:display.seg_unidade
+seg_unidade[4] <= bin_to_7seg:display.seg_unidade
+seg_unidade[5] <= bin_to_7seg:display.seg_unidade
+seg_unidade[6] <= bin_to_7seg:display.seg_unidade
+
+
+|top_fsm_toda|contador_duzias:CONT_DUZ|bin_to_7seg:display
+bin_in[0] => bin_in[0].IN1
+bin_in[1] => bin_in[1].IN1
+bin_in[2] => bin_in[2].IN1
+bin_in[3] => bin_in[3].IN1
+bin_in[4] => bin_in[4].IN1
+bin_in[5] => bin_in[5].IN1
+bin_in[6] => bin_in[6].IN1
+seg_dezena[0] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[1] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[2] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[3] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[4] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[5] <= bcd_to_7seg:dec_dezena.seg
+seg_dezena[6] <= bcd_to_7seg:dec_dezena.seg
+seg_unidade[0] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[1] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[2] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[3] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[4] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[5] <= bcd_to_7seg:dec_unidade.seg
+seg_unidade[6] <= bcd_to_7seg:dec_unidade.seg
+
+
+|top_fsm_toda|contador_duzias:CONT_DUZ|bin_to_7seg:display|bin_to_bcd:converter
+bin[0] => Div0.IN10
+bin[0] => Mod0.IN10
+bin[1] => Div0.IN9
+bin[1] => Mod0.IN9
+bin[2] => Div0.IN8
+bin[2] => Mod0.IN8
+bin[3] => Div0.IN7
+bin[3] => Mod0.IN7
+bin[4] => Div0.IN6
+bin[4] => Mod0.IN6
+bin[5] => Div0.IN5
+bin[5] => Mod0.IN5
+bin[6] => Div0.IN4
+bin[6] => Mod0.IN4
+dezena[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|contador_duzias:CONT_DUZ|bin_to_7seg:display|bcd_to_7seg:dec_dezena
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_fsm_toda|contador_duzias:CONT_DUZ|bin_to_7seg:display|bcd_to_7seg:dec_unidade
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

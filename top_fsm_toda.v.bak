@@ -1,0 +1,139 @@
+// TOP-LEVEL INTEGRADO
+module top_fsm_toda(
+    input clk,
+    input rst_n,
+
+
+    // ---- Entradas gerais ----
+    input START_BTN,
+    input LIMPA_SUJEIRA,
+
+
+    // ---- Sensores FSM1 ----
+    input TEM_GARRAFA,
+    input GARRAFA_CHEIA,
+
+
+    // ---- Sensores FSM2 ----
+    input GARRAFA_VEDADA,
+    input CQ_OK,
+    input CQ_NOK,
+    input MAIS_15_BTN,
+
+
+    // ---- ALARME GLOBAL ----
+    input ALARME_SEM_ROLHA,
+
+
+    // ---- LEDs debug ----
+    output MOTOR,
+    output EV,
+    output VE,
+    output DEC_ROLHA,
+    output REJEITA_GARRAFA,
+    output MAIS_15_DISP,
+    output INC_DUZIA,
+    output ESTEIRA_SUJA,
+    output LED_ALARME,
+    output [1:0] EST1,
+    output [1:0] EST2,
+    output done
+    );
+
+    assign done = FSM1_DONE;
+    wire FSM1_DONE;
+
+    // ---------------------------
+    // DETECTOR DE BORDA PARA FSM1_DONE
+    // ---------------------------
+    reg f1_d0, f1_d1;
+
+    always @(posedge clk) begin
+         f1_d0 <= FSM1_DONE;
+         f1_d1 <= f1_d0;
+    end
+
+    wire FSM1_DONE_EDGE = (f1_d0 && !f1_d1);
+    
+    
+    // ---------------------------
+    // DETECTORES DE BORDA PARA CQ_OK E CQ_NOK
+    // ---------------------------
+    reg ok0, ok1, nok0, nok1;
+
+    always @(posedge clk) begin
+         ok0  <= CQ_OK;
+         ok1  <= ok0;
+
+         nok0 <= CQ_NOK;
+         nok1 <= nok0;
+    end
+
+    wire CQ_OK_EDGE  = (ok0  && !ok1);
+    wire CQ_NOK_EDGE = (nok0 && !nok1);
+
+    wire FSM2_FINISHED = CQ_OK_EDGE | CQ_NOK_EDGE;
+    
+    
+    // ---------------------------
+    // LATCH PARA START_VED (somente ativa com borda da FSM1)
+    // ---------------------------
+    reg start_ved_reg;
+
+    always @(posedge clk or negedge rst_n) begin
+         if (!rst_n)
+              start_ved_reg <= 0;
+
+         else if (FSM1_DONE_EDGE)
+              start_ved_reg <= 1;
+
+         else if (FSM2_FINISHED)
+              start_ved_reg <= 0;
+    end
+
+    wire START_VED_SIGNAL = start_ved_reg;
+    
+    
+    //--------------------------------
+    // FSM1 – Enchimento
+    //--------------------------------
+    fsm_enchimento FSM1 (
+    .clk(clk),
+    .rst_n(rst_n),
+    .START_BTN(START_BTN),
+    .LIMPA_SUJEIRA(LIMPA_SUJEIRA),
+    .ALARME(ALARME_SEM_ROLHA),
+    .TEM_GARRAFA(TEM_GARRAFA),
+    .GARRAFA_CHEIA(GARRAFA_CHEIA),
+    .E1(EST1[1]), .E0(EST1[0]),
+    .MOTOR(MOTOR),
+    .EV(EV),
+    .FSM1_DONE(FSM1_DONE),
+    .LED_ALARME(LED_ALARME),
+    .ESTEIRA_SUJA(ESTEIRA_SUJA)
+    );
+
+
+    //--------------------------------
+    // FSM2 – Vedação + CQ
+    //--------------------------------
+    fsm2_qualidade1 FSM2 (
+    .clk(clk),
+    .rst_n(rst_n),
+    .START_VED(START_VED_SIGNAL),
+    .ALARME(ALARME_SEM_ROLHA),
+    .GARRAFA_VEDADA(GARRAFA_VEDADA),
+    .CQ_OK(CQ_OK),
+    .CQ_NOK(CQ_NOK),
+    .MAIS_15_BTN(MAIS_15_BTN),
+    .E0(EST2[0]),
+    .E1(EST2[1]),
+    .VE(VE),
+    .DEC_ROLHA(DEC_ROLHA),
+    .REJEITA_GARRAFA(REJEITA_GARRAFA),
+    .MAIS_15_DISP(MAIS_15_DISP),
+    .INC_DUZIA(INC_DUZIA)
+    );
+
+
+endmodule

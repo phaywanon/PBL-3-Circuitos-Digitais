@@ -1,0 +1,124 @@
+module fsm2_qualidade1 (
+    input  clk,
+    input  rst_n,
+
+    // ENTRADAS
+    input  START_VED,        // habilitação vinda da FSM1
+    input  ALARME,           // sem rolhas / erro
+    input  GARRAFA_VEDADA,   // sensor diz que vedação terminou
+    input  CQ_OK,            // controle de qualidade aprovou
+    input  CQ_NOK,           // controle de qualidade rejeitou
+    input  MAIS_15_BTN,      // operador adicionou 15 rolhas
+
+    // SAÍDAS
+    output reg E0,           // estado atual (bit mais baixo)
+    output reg E1,           // estado atual (bit mais alto)
+
+    output VE,           // atuador da rolhadeira
+    output DEC_ROLHA,    // decrementa rolhas
+    output REJEITA_GARRAFA,
+    output MAIS_15_DISP,
+    output INC_DUZIA
+);
+
+    // --------------------------
+    // ESTADOS
+    // --------------------------
+     localparam S0_HOLD = 2'b00;
+    localparam S1_VEDANDO = 2'b01;
+    localparam S2_CQ      = 2'b10;
+
+    reg [1:0] state, next_state;
+     
+     
+     // -------------------------------
+    // SAÍDAS
+    // -------------------------------
+    assign VE = (state == S1_VEDANDO);
+    assign DEC_ROLHA = (state == S1_VEDANDO);
+     assign REJEITA_GARRAFA = (state == S2_CQ) && CQ_NOK;
+     assign INC_DUZIA = (state == S2_CQ) && CQ_OK;
+
+    // --------------------------
+    // LÓGICA COMPORTAMENTAL
+    // --------------------------
+    always @(*) begin
+//        // valores padrão
+//        next_state = state;
+//        VE                = 1'b0;
+//        DEC_ROLHA         = 1'b0;
+//        REJEITA_GARRAFA   = 1'b0;
+//        MAIS_15_DISP      = 1'b0;
+//        INC_DUZIA         = 1'b0;
+//
+//        // operador adicionou rolhas
+//        if (MAIS_15_BTN)
+//            MAIS_15_DISP = 1'b1;
+
+        // alarme paralisa tudo
+        if (ALARME) begin
+            next_state = S0_HOLD;
+        end
+
+        else case(state)
+                // ---------------------------------------------------
+                // ESTADO 0 - HOLD
+                // ---------------------------------------------------
+                S0_HOLD: begin
+                    if (START_VED)
+                        next_state = S1_VEDANDO;
+                        //        VE                = 1'b0;
+                        //        DEC_ROLHA         = 1'b0;
+                        //        REJEITA_GARRAFA   = 1'b0;
+                        //        MAIS_15_DISP      = 1'b0;
+                        //        INC_DUZIA         = 1'b0;                    
+                    else
+                    next_state = S0_HOLD;
+                end
+        
+            // ---------------------------------------------------
+            // ESTADO 1 — VEDAÇÃO
+            // ---------------------------------------------------
+            S1_VEDANDO: begin
+                if (!START_VED)
+                        next_state = S0_HOLD;
+                else if (GARRAFA_VEDADA)
+                  next_state = S2_CQ;
+                     else
+                      next_state = S1_VEDANDO;
+            end
+
+            // ---------------------------------------------------
+            // ESTADO 2 — CONTROLE DE QUALIDADE
+            // ---------------------------------------------------
+            S2_CQ: begin
+                if (!START_VED)
+                  next_state = S0_HOLD;
+                else if (CQ_NOK || CQ_OK)
+                        next_state = S0_HOLD;
+                     else
+                        next_state = S2_CQ;
+            end
+                
+                default: next_state = S0_HOLD;
+        endcase
+    end
+
+    // --------------------------
+    // REGISTRADORES DE ESTADO
+    // --------------------------
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n)
+            state <= S0_HOLD;
+        else
+            state <= next_state;
+    end
+
+    // --------------------------
+    // EXPORTA OS BITS DO ESTADO
+    // --------------------------
+     always @(*) begin
+         {E1, E0} = state;   // apenas espelha o bit!
+     end
+
+endmodule

@@ -1,0 +1,30 @@
+module contador_garrafas (
+    input clk,
+    input rst_n,
+    input inc_garrafa,        // vem de INC_DUZIA da FSM2
+    output reg pulso_duzia    // vai pro contador_duzias
+);
+
+reg [3:0] count_garrafas;  // 0 a 12
+
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        count_garrafas <= 0;
+        pulso_duzia <= 0;
+    end
+    else begin
+        pulso_duzia <= 0;  // padrão
+        
+        if (inc_garrafa) begin
+            if (count_garrafas >= 11) begin  // 12ª garrafa
+                count_garrafas <= 0;
+                pulso_duzia <= 1;  // gera pulso
+            end
+            else begin
+                count_garrafas <= count_garrafas + 1;
+            end
+        end
+    end
+end
+
+endmodule

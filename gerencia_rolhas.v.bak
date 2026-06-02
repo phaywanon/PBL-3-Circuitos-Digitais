@@ -1,0 +1,81 @@
+module gerencia_rolhas (
+    input  clk,
+    input  rst_n,
+
+    // sinais da FSM2
+    input  dec_rolha,     // decrementa magazine
+
+    // reposição manual no DISPENSER (+1 até 15)
+    input  manual_add,
+
+    // reposição automática no DISPENSER (+15 direto)
+    input  auto_add15,
+
+    // SAÍDAS
+    output reg [4:0] magazine_count,   // 6..20
+    output reg [5:0] dispenser_count,  // 0,15,30
+    output reg       alarme_sem_rolha,
+    output           ready15           // dispenser >= 15
+);
+
+assign ready15 = (dispenser_count >= 15);
+
+
+// --------------------------------------
+// Inicialização
+// --------------------------------------
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        magazine_count  <= 6;     // magazine sempre inicia cheia o mínimo seguro
+        dispenser_count <= 30;    // inicia carregado
+        alarme_sem_rolha <= 0;
+    end
+
+    else begin
+
+        // --------------------------------------
+        // 1) REPOSIÇÃO MANUAL (+1 até atingir 15)
+        // --------------------------------------
+        if (manual_add && dispenser_count < 15)
+            dispenser_count <= dispenser_count + 1;
+
+        // --------------------------------------
+        // 2) REPOSIÇÃO AUTOMÁTICA (+15 direto)
+        // --------------------------------------
+        if (auto_add15) begin
+            if (dispenser_count <= 15)
+                dispenser_count <= dispenser_count + 15;
+        end
+
+        // --------------------------------------
+        // 3) ALARME → quando DISPENSER zerar
+        // --------------------------------------
+        if (dispenser_count == 0)
+            alarme_sem_rolha <= 1;
+        else
+            alarme_sem_rolha <= 0;
+
+        // --------------------------------------
+        // 4) Consumo de 1 rolha (decremento magazine)
+        // --------------------------------------
+        if (dec_rolha) begin
+
+            // caso normal
+            if (magazine_count > 6) begin
+                magazine_count <= magazine_count - 1;
+            end
+
+            // chegou a 6 → REPOE MAGAZINE
+            else if (magazine_count == 6) begin
+                if (dispenser_count >= 15) begin
+                    magazine_count  <= 20;           // recarrega magazine
+                    dispenser_count <= dispenser_count - 15;
+                end
+                // se dispenser < 15 → NÃO repõe
+                // magazine fica em 6 e FSM2 congela esperando ready15
+            end
+        end
+    end
+end
+
+endmodule

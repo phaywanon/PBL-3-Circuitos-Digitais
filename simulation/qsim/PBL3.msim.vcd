@@ -1,0 +1,1928 @@
+$comment
+	File created using the following command:
+		vcd file PBL3.msim.vcd -direction
+$end
+$date
+	Wed Dec 10 00:36:05 2025
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module top_fsm_toda_vlg_vec_tst $end
+$var reg 1 ! CQ_NOK $end
+$var reg 1 " CQ_OK $end
+$var reg 1 # GARRAFA_CHEIA $end
+$var reg 1 $ GARRAFA_VEDADA $end
+$var reg 1 % LIMPA_SUJEIRA $end
+$var reg 1 & MAIS_15_BTN $end
+$var reg 1 ' MANUAL_ADD $end
+$var reg 1 ( START_BTN $end
+$var reg 1 ) TEM_GARRAFA $end
+$var reg 1 * clk $end
+$var reg 1 + rst_n $end
+$var wire 1 , DEC_ROLHA $end
+$var wire 1 - EST1 [1] $end
+$var wire 1 . EST1 [0] $end
+$var wire 1 / EST2 [1] $end
+$var wire 1 0 EST2 [0] $end
+$var wire 1 1 ESTEIRA_SUJA $end
+$var wire 1 2 EV $end
+$var wire 1 3 INC_DUZIA $end
+$var wire 1 4 LED_ALARME $end
+$var wire 1 5 MOTOR $end
+$var wire 1 6 REJEITA_GARRAFA $end
+$var wire 1 7 VE $end
+$var wire 1 8 seg_dezena_disp [6] $end
+$var wire 1 9 seg_dezena_disp [5] $end
+$var wire 1 : seg_dezena_disp [4] $end
+$var wire 1 ; seg_dezena_disp [3] $end
+$var wire 1 < seg_dezena_disp [2] $end
+$var wire 1 = seg_dezena_disp [1] $end
+$var wire 1 > seg_dezena_disp [0] $end
+$var wire 1 ? seg_dezena_duzias [6] $end
+$var wire 1 @ seg_dezena_duzias [5] $end
+$var wire 1 A seg_dezena_duzias [4] $end
+$var wire 1 B seg_dezena_duzias [3] $end
+$var wire 1 C seg_dezena_duzias [2] $end
+$var wire 1 D seg_dezena_duzias [1] $end
+$var wire 1 E seg_dezena_duzias [0] $end
+$var wire 1 F seg_dezena_rolhas [6] $end
+$var wire 1 G seg_dezena_rolhas [5] $end
+$var wire 1 H seg_dezena_rolhas [4] $end
+$var wire 1 I seg_dezena_rolhas [3] $end
+$var wire 1 J seg_dezena_rolhas [2] $end
+$var wire 1 K seg_dezena_rolhas [1] $end
+$var wire 1 L seg_dezena_rolhas [0] $end
+$var wire 1 M seg_unidade_disp [6] $end
+$var wire 1 N seg_unidade_disp [5] $end
+$var wire 1 O seg_unidade_disp [4] $end
+$var wire 1 P seg_unidade_disp [3] $end
+$var wire 1 Q seg_unidade_disp [2] $end
+$var wire 1 R seg_unidade_disp [1] $end
+$var wire 1 S seg_unidade_disp [0] $end
+$var wire 1 T seg_unidade_duzias [6] $end
+$var wire 1 U seg_unidade_duzias [5] $end
+$var wire 1 V seg_unidade_duzias [4] $end
+$var wire 1 W seg_unidade_duzias [3] $end
+$var wire 1 X seg_unidade_duzias [2] $end
+$var wire 1 Y seg_unidade_duzias [1] $end
+$var wire 1 Z seg_unidade_duzias [0] $end
+$var wire 1 [ seg_unidade_rolhas [6] $end
+$var wire 1 \ seg_unidade_rolhas [5] $end
+$var wire 1 ] seg_unidade_rolhas [4] $end
+$var wire 1 ^ seg_unidade_rolhas [3] $end
+$var wire 1 _ seg_unidade_rolhas [2] $end
+$var wire 1 ` seg_unidade_rolhas [1] $end
+$var wire 1 a seg_unidade_rolhas [0] $end
+
+$scope module i1 $end
+$var wire 1 b gnd $end
+$var wire 1 c vcc $end
+$var wire 1 d unknown $end
+$var tri1 1 e devclrn $end
+$var tri1 1 f devpor $end
+$var tri1 1 g devoe $end
+$var wire 1 h ~QUARTUS_CREATED_UNVM~~busy $end
+$var wire 1 i ~QUARTUS_CREATED_ADC1~~eoc $end
+$var wire 1 j ~QUARTUS_CREATED_ADC2~~eoc $end
+$var wire 1 k MOTOR~output_o $end
+$var wire 1 l EV~output_o $end
+$var wire 1 m VE~output_o $end
+$var wire 1 n DEC_ROLHA~output_o $end
+$var wire 1 o REJEITA_GARRAFA~output_o $end
+$var wire 1 p INC_DUZIA~output_o $end
+$var wire 1 q ESTEIRA_SUJA~output_o $end
+$var wire 1 r LED_ALARME~output_o $end
+$var wire 1 s EST1[0]~output_o $end
+$var wire 1 t EST1[1]~output_o $end
+$var wire 1 u EST2[0]~output_o $end
+$var wire 1 v EST2[1]~output_o $end
+$var wire 1 w seg_dezena_rolhas[0]~output_o $end
+$var wire 1 x seg_dezena_rolhas[1]~output_o $end
+$var wire 1 y seg_dezena_rolhas[2]~output_o $end
+$var wire 1 z seg_dezena_rolhas[3]~output_o $end
+$var wire 1 { seg_dezena_rolhas[4]~output_o $end
+$var wire 1 | seg_dezena_rolhas[5]~output_o $end
+$var wire 1 } seg_dezena_rolhas[6]~output_o $end
+$var wire 1 ~ seg_unidade_rolhas[0]~output_o $end
+$var wire 1 !! seg_unidade_rolhas[1]~output_o $end
+$var wire 1 "! seg_unidade_rolhas[2]~output_o $end
+$var wire 1 #! seg_unidade_rolhas[3]~output_o $end
+$var wire 1 $! seg_unidade_rolhas[4]~output_o $end
+$var wire 1 %! seg_unidade_rolhas[5]~output_o $end
+$var wire 1 &! seg_unidade_rolhas[6]~output_o $end
+$var wire 1 '! seg_unidade_disp[0]~output_o $end
+$var wire 1 (! seg_unidade_disp[1]~output_o $end
+$var wire 1 )! seg_unidade_disp[2]~output_o $end
+$var wire 1 *! seg_unidade_disp[3]~output_o $end
+$var wire 1 +! seg_unidade_disp[4]~output_o $end
+$var wire 1 ,! seg_unidade_disp[5]~output_o $end
+$var wire 1 -! seg_unidade_disp[6]~output_o $end
+$var wire 1 .! seg_dezena_disp[0]~output_o $end
+$var wire 1 /! seg_dezena_disp[1]~output_o $end
+$var wire 1 0! seg_dezena_disp[2]~output_o $end
+$var wire 1 1! seg_dezena_disp[3]~output_o $end
+$var wire 1 2! seg_dezena_disp[4]~output_o $end
+$var wire 1 3! seg_dezena_disp[5]~output_o $end
+$var wire 1 4! seg_dezena_disp[6]~output_o $end
+$var wire 1 5! seg_unidade_duzias[0]~output_o $end
+$var wire 1 6! seg_unidade_duzias[1]~output_o $end
+$var wire 1 7! seg_unidade_duzias[2]~output_o $end
+$var wire 1 8! seg_unidade_duzias[3]~output_o $end
+$var wire 1 9! seg_unidade_duzias[4]~output_o $end
+$var wire 1 :! seg_unidade_duzias[5]~output_o $end
+$var wire 1 ;! seg_unidade_duzias[6]~output_o $end
+$var wire 1 <! seg_dezena_duzias[0]~output_o $end
+$var wire 1 =! seg_dezena_duzias[1]~output_o $end
+$var wire 1 >! seg_dezena_duzias[2]~output_o $end
+$var wire 1 ?! seg_dezena_duzias[3]~output_o $end
+$var wire 1 @! seg_dezena_duzias[4]~output_o $end
+$var wire 1 A! seg_dezena_duzias[5]~output_o $end
+$var wire 1 B! seg_dezena_duzias[6]~output_o $end
+$var wire 1 C! clk~input_o $end
+$var wire 1 D! clk~inputclkctrl_outclk $end
+$var wire 1 E! GER|dispenser_count[0]~6_combout $end
+$var wire 1 F! rst_n~input_o $end
+$var wire 1 G! p_dec|sinal_delay~q $end
+$var wire 1 H! p_dec|pulso~0_combout $end
+$var wire 1 I! p_dec|pulso~q $end
+$var wire 1 J! GER|Add0~1 $end
+$var wire 1 K! GER|Add0~2_combout $end
+$var wire 1 L! GER|magazine_count[1]~3_combout $end
+$var wire 1 M! GER|Add0~3 $end
+$var wire 1 N! GER|Add0~4_combout $end
+$var wire 1 O! GER|magazine_count[2]~2_combout $end
+$var wire 1 P! GER|Add0~5 $end
+$var wire 1 Q! GER|Add0~6_combout $end
+$var wire 1 R! GER|magazine_count[3]~1_combout $end
+$var wire 1 S! GER|Add0~7 $end
+$var wire 1 T! GER|Add0~8_combout $end
+$var wire 1 U! GER|magazine_count[4]~0_combout $end
+$var wire 1 V! GER|always0~3_combout $end
+$var wire 1 W! GER|always0~4_combout $end
+$var wire 1 X! GER|Add0~0_combout $end
+$var wire 1 Y! GER|magazine_count[0]~4_combout $end
+$var wire 1 Z! GER|always0~1_combout $end
+$var wire 1 [! GER|always0~0_combout $end
+$var wire 1 \! GER|dispenser_count[4]~17 $end
+$var wire 1 ]! GER|dispenser_count[5]~18_combout $end
+$var wire 1 ^! MAIS_15_BTN~input_o $end
+$var wire 1 _! p15|sinal_delay~q $end
+$var wire 1 `! p15|pulso~0_combout $end
+$var wire 1 a! p15|pulso~q $end
+$var wire 1 b! GER|Add2~2_combout $end
+$var wire 1 c! GER|dispenser_count[0]~7 $end
+$var wire 1 d! GER|dispenser_count[1]~10_combout $end
+$var wire 1 e! GER|dispenser_count[1]~11 $end
+$var wire 1 f! GER|dispenser_count[2]~12_combout $end
+$var wire 1 g! GER|dispenser_count[2]~13 $end
+$var wire 1 h! GER|dispenser_count[3]~14_combout $end
+$var wire 1 i! GER|dispenser_count[3]~15 $end
+$var wire 1 j! GER|dispenser_count[4]~16_combout $end
+$var wire 1 k! GER|Equal0~2_combout $end
+$var wire 1 l! GER|LessThan1~0_combout $end
+$var wire 1 m! GER|always0~2_combout $end
+$var wire 1 n! MANUAL_ADD~input_o $end
+$var wire 1 o! GER|dispenser_count[5]~8_combout $end
+$var wire 1 p! GER|dispenser_count[5]~9_combout $end
+$var wire 1 q! GER|Equal0~0_combout $end
+$var wire 1 r! GER|Equal0~1_combout $end
+$var wire 1 s! GER|alarme_sem_rolha~q $end
+$var wire 1 t! GARRAFA_VEDADA~input_o $end
+$var wire 1 u! START_BTN~input_o $end
+$var wire 1 v! FSM1|start_sync0~feeder_combout $end
+$var wire 1 w! FSM1|start_sync0~q $end
+$var wire 1 x! FSM1|start_sync1~feeder_combout $end
+$var wire 1 y! FSM1|start_sync1~q $end
+$var wire 1 z! FSM1|start_prev~feeder_combout $end
+$var wire 1 {! FSM1|start_prev~q $end
+$var wire 1 |! FSM1|running~0_combout $end
+$var wire 1 }! FSM1|running~q $end
+$var wire 1 ~! TEM_GARRAFA~input_o $end
+$var wire 1 !" GARRAFA_CHEIA~input_o $end
+$var wire 1 "" FSM1|Selector0~2_combout $end
+$var wire 1 #" FSM1|state.S1_GARRAFA~q $end
+$var wire 1 $" FSM1|Selector1~2_combout $end
+$var wire 1 %" FSM1|Selector1~3_combout $end
+$var wire 1 &" FSM1|state.S2_ENCHENDO~q $end
+$var wire 1 '" FSM1|always4~2_combout $end
+$var wire 1 (" FSM1|done_reg~q $end
+$var wire 1 )" p_fsm1|sinal_delay~feeder_combout $end
+$var wire 1 *" p_fsm1|sinal_delay~q $end
+$var wire 1 +" p_fsm1|pulso~0_combout $end
+$var wire 1 ," p_fsm1|pulso~q $end
+$var wire 1 -" CQ_OK~input_o $end
+$var wire 1 ." p_cqok|sinal_delay~feeder_combout $end
+$var wire 1 /" p_cqok|sinal_delay~q $end
+$var wire 1 0" p_cqok|pulso~0_combout $end
+$var wire 1 1" p_cqok|pulso~q $end
+$var wire 1 2" CQ_NOK~input_o $end
+$var wire 1 3" p_cqnok|sinal_delay~feeder_combout $end
+$var wire 1 4" p_cqnok|sinal_delay~q $end
+$var wire 1 5" p_cqnok|pulso~0_combout $end
+$var wire 1 6" p_cqnok|pulso~q $end
+$var wire 1 7" FSM2|next_state.S2_CQ~0_combout $end
+$var wire 1 8" FSM2|next_state.S2_CQ~1_combout $end
+$var wire 1 9" FSM2|state.S2_CQ~q $end
+$var wire 1 :" FSM2|next_state.S0_HOLD~0_combout $end
+$var wire 1 ;" FSM2|next_state.S0_HOLD~1_combout $end
+$var wire 1 <" FSM2|state.S0_HOLD~q $end
+$var wire 1 =" FSM2|next_state.S1_VEDANDO~0_combout $end
+$var wire 1 >" FSM2|next_state.S1_VEDANDO~1_combout $end
+$var wire 1 ?" FSM2|state.S1_VEDANDO~q $end
+$var wire 1 @" FSM1|MOTOR~0_combout $end
+$var wire 1 A" FSM1|always4~0_combout $end
+$var wire 1 B" FSM2|rejeita_latch~1_combout $end
+$var wire 1 C" FSM2|rejeita_latch~q $end
+$var wire 1 D" FSM2|inc_duzia_latch~0_combout $end
+$var wire 1 E" FSM2|inc_duzia_latch~1_combout $end
+$var wire 1 F" FSM2|inc_duzia_latch~q $end
+$var wire 1 G" FSM1|always4~1_combout $end
+$var wire 1 H" FSM1|state.S0_IDLE~q $end
+$var wire 1 I" LIMPA_SUJEIRA~input_o $end
+$var wire 1 J" FSM1|ESTEIRA_SUJA~0_combout $end
+$var wire 1 K" FSM1|ESTEIRA_SUJA~q $end
+$var wire 1 L" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[1]~1 $end
+$var wire 1 M" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[2]~3 $end
+$var wire 1 N" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[3]~5 $end
+$var wire 1 O" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[4]~7_cout $end
+$var wire 1 P" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[5]~8_combout $end
+$var wire 1 Q" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[3]~4_combout $end
+$var wire 1 R" magazine_display|converter|Div0|auto_generated|divider|divider|StageOut[28]~1_combout $end
+$var wire 1 S" magazine_display|converter|Div0|auto_generated|divider|divider|StageOut[28]~0_combout $end
+$var wire 1 T" magazine_display|converter|Div0|auto_generated|divider|divider|StageOut[27]~2_combout $end
+$var wire 1 U" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[2]~2_combout $end
+$var wire 1 V" magazine_display|converter|Div0|auto_generated|divider|divider|StageOut[27]~3_combout $end
+$var wire 1 W" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[1]~0_combout $end
+$var wire 1 X" magazine_display|converter|Div0|auto_generated|divider|divider|StageOut[26]~5_combout $end
+$var wire 1 Y" magazine_display|converter|Div0|auto_generated|divider|divider|StageOut[26]~4_combout $end
+$var wire 1 Z" magazine_display|converter|Div0|auto_generated|divider|divider|StageOut[25]~7_combout $end
+$var wire 1 [" magazine_display|converter|Div0|auto_generated|divider|divider|StageOut[25]~6_combout $end
+$var wire 1 \" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[1]~1_cout $end
+$var wire 1 ]" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[2]~3_cout $end
+$var wire 1 ^" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[3]~5_cout $end
+$var wire 1 _" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[4]~7_cout $end
+$var wire 1 `" magazine_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[5]~8_combout $end
+$var wire 1 a" magazine_display|dec_dezena|WideOr6~0_combout $end
+$var wire 1 b" magazine_display|dec_dezena|WideOr4~0_combout $end
+$var wire 1 c" magazine_display|dec_dezena|WideOr1~0_combout $end
+$var wire 1 d" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[1]~1 $end
+$var wire 1 e" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[2]~3 $end
+$var wire 1 f" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[3]~5 $end
+$var wire 1 g" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[4]~7_cout $end
+$var wire 1 h" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[5]~8_combout $end
+$var wire 1 i" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[26]~6_combout $end
+$var wire 1 j" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[1]~0_combout $end
+$var wire 1 k" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[26]~7_combout $end
+$var wire 1 l" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[25]~0_combout $end
+$var wire 1 m" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[25]~1_combout $end
+$var wire 1 n" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[1]~1 $end
+$var wire 1 o" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[2]~2_combout $end
+$var wire 1 p" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[3]~4_combout $end
+$var wire 1 q" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[28]~3_combout $end
+$var wire 1 r" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[28]~2_combout $end
+$var wire 1 s" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[27]~4_combout $end
+$var wire 1 t" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[2]~2_combout $end
+$var wire 1 u" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[27]~5_combout $end
+$var wire 1 v" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[2]~3 $end
+$var wire 1 w" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[3]~5 $end
+$var wire 1 x" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[4]~7_cout $end
+$var wire 1 y" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[5]~8_combout $end
+$var wire 1 z" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[32]~9_combout $end
+$var wire 1 {" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[1]~0_combout $end
+$var wire 1 |" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[31]~8_combout $end
+$var wire 1 }" magazine_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[3]~4_combout $end
+$var wire 1 ~" magazine_display|converter|Mod0|auto_generated|divider|divider|StageOut[33]~10_combout $end
+$var wire 1 !# magazine_display|dec_unidade|WideOr6~0_combout $end
+$var wire 1 "# magazine_display|dec_unidade|WideOr5~0_combout $end
+$var wire 1 ## magazine_display|dec_unidade|WideOr4~0_combout $end
+$var wire 1 $# magazine_display|dec_unidade|WideOr3~0_combout $end
+$var wire 1 %# magazine_display|dec_unidade|WideOr2~0_combout $end
+$var wire 1 &# magazine_display|dec_unidade|WideOr1~0_combout $end
+$var wire 1 '# magazine_display|dec_unidade|WideOr0~0_combout $end
+$var wire 1 (# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[1]~1_cout $end
+$var wire 1 )# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[2]~2_combout $end
+$var wire 1 *# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[2]~3 $end
+$var wire 1 +# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[3]~5 $end
+$var wire 1 ,# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[4]~7_cout $end
+$var wire 1 -# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[5]~8_combout $end
+$var wire 1 .# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[22]~19_combout $end
+$var wire 1 /# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[22]~18_combout $end
+$var wire 1 0# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[21]~21_combout $end
+$var wire 1 1# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[21]~20_combout $end
+$var wire 1 2# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[0]~10_combout $end
+$var wire 1 3# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[20]~23_combout $end
+$var wire 1 4# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[20]~22_combout $end
+$var wire 1 5# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[1]~1 $end
+$var wire 1 6# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[2]~3 $end
+$var wire 1 7# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[3]~4_combout $end
+$var wire 1 8# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[3]~4_combout $end
+$var wire 1 9# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[23]~17_combout $end
+$var wire 1 :# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[23]~16_combout $end
+$var wire 1 ;# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[3]~5 $end
+$var wire 1 <# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[4]~7_cout $end
+$var wire 1 =# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[5]~8_combout $end
+$var wire 1 ># dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[28]~26_combout $end
+$var wire 1 ?# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[28]~33_combout $end
+$var wire 1 @# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[2]~2_combout $end
+$var wire 1 A# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[27]~28_combout $end
+$var wire 1 B# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[27]~27_combout $end
+$var wire 1 C# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[26]~34_combout $end
+$var wire 1 D# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[1]~0_combout $end
+$var wire 1 E# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[26]~29_combout $end
+$var wire 1 F# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[0]~10_combout $end
+$var wire 1 G# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[25]~25_combout $end
+$var wire 1 H# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[25]~24_combout $end
+$var wire 1 I# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[1]~1 $end
+$var wire 1 J# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[2]~3 $end
+$var wire 1 K# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[3]~5 $end
+$var wire 1 L# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[4]~7_cout $end
+$var wire 1 M# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[5]~8_combout $end
+$var wire 1 N# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[3]~4_combout $end
+$var wire 1 O# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[33]~32_combout $end
+$var wire 1 P# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[2]~2_combout $end
+$var wire 1 Q# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[32]~31_combout $end
+$var wire 1 R# dispensador_display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[1]~0_combout $end
+$var wire 1 S# dispensador_display|converter|Mod0|auto_generated|divider|divider|StageOut[31]~30_combout $end
+$var wire 1 T# dispensador_display|dec_unidade|WideOr6~0_combout $end
+$var wire 1 U# dispensador_display|dec_unidade|WideOr5~0_combout $end
+$var wire 1 V# dispensador_display|dec_unidade|WideOr4~0_combout $end
+$var wire 1 W# dispensador_display|dec_unidade|WideOr3~0_combout $end
+$var wire 1 X# dispensador_display|dec_unidade|WideOr2~0_combout $end
+$var wire 1 Y# dispensador_display|dec_unidade|WideOr1~0_combout $end
+$var wire 1 Z# dispensador_display|dec_unidade|WideOr0~0_combout $end
+$var wire 1 [# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[1]~1_cout $end
+$var wire 1 \# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[2]~3 $end
+$var wire 1 ]# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[3]~5 $end
+$var wire 1 ^# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[4]~7_cout $end
+$var wire 1 _# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[5]~8_combout $end
+$var wire 1 `# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[3]~4_combout $end
+$var wire 1 a# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[23]~17_combout $end
+$var wire 1 b# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[23]~16_combout $end
+$var wire 1 c# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[2]~2_combout $end
+$var wire 1 d# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[22]~19_combout $end
+$var wire 1 e# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[22]~18_combout $end
+$var wire 1 f# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[21]~21_combout $end
+$var wire 1 g# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[21]~20_combout $end
+$var wire 1 h# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[0]~10_combout $end
+$var wire 1 i# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[20]~23_combout $end
+$var wire 1 j# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[20]~22_combout $end
+$var wire 1 k# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[1]~1 $end
+$var wire 1 l# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[2]~3 $end
+$var wire 1 m# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[3]~5 $end
+$var wire 1 n# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[4]~7_cout $end
+$var wire 1 o# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[5]~8_combout $end
+$var wire 1 p# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[28]~30_combout $end
+$var wire 1 q# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[3]~4_combout $end
+$var wire 1 r# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[28]~24_combout $end
+$var wire 1 s# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[27]~25_combout $end
+$var wire 1 t# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[2]~2_combout $end
+$var wire 1 u# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[27]~26_combout $end
+$var wire 1 v# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[26]~31_combout $end
+$var wire 1 w# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[1]~0_combout $end
+$var wire 1 x# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[26]~27_combout $end
+$var wire 1 y# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[0]~10_combout $end
+$var wire 1 z# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[25]~29_combout $end
+$var wire 1 {# dispensador_display|converter|Div0|auto_generated|divider|divider|StageOut[25]~28_combout $end
+$var wire 1 |# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[1]~1_cout $end
+$var wire 1 }# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[2]~3_cout $end
+$var wire 1 ~# dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[3]~5_cout $end
+$var wire 1 !$ dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[4]~7_cout $end
+$var wire 1 "$ dispensador_display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[5]~8_combout $end
+$var wire 1 #$ dispensador_display|dec_dezena|WideOr6~0_combout $end
+$var wire 1 $$ dispensador_display|dec_dezena|WideOr5~0_combout $end
+$var wire 1 %$ dispensador_display|dec_dezena|WideOr4~0_combout $end
+$var wire 1 &$ dispensador_display|dec_dezena|WideOr3~0_combout $end
+$var wire 1 '$ dispensador_display|dec_dezena|WideOr2~0_combout $end
+$var wire 1 ($ dispensador_display|dec_dezena|WideOr1~0_combout $end
+$var wire 1 )$ dispensador_display|dec_dezena|WideOr0~0_combout $end
+$var wire 1 *$ CONT_DUZ|count[0]~7_combout $end
+$var wire 1 +$ CONT_DUZ|count[2]~12 $end
+$var wire 1 ,$ CONT_DUZ|count[3]~13_combout $end
+$var wire 1 -$ ~GND~combout $end
+$var wire 1 .$ CONT_DUZ|count[3]~14 $end
+$var wire 1 /$ CONT_DUZ|count[4]~15_combout $end
+$var wire 1 0$ CONT_DUZ|count[4]~16 $end
+$var wire 1 1$ CONT_DUZ|count[5]~17_combout $end
+$var wire 1 2$ CONT_DUZ|count[5]~18 $end
+$var wire 1 3$ CONT_DUZ|count[6]~19_combout $end
+$var wire 1 4$ CONT_DUZ|LessThan0~0_combout $end
+$var wire 1 5$ CONT_DUZ|count[0]~8 $end
+$var wire 1 6$ CONT_DUZ|count[1]~9_combout $end
+$var wire 1 7$ CONT_DUZ|count[1]~10 $end
+$var wire 1 8$ CONT_DUZ|count[2]~11_combout $end
+$var wire 1 9$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 $end
+$var wire 1 :$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 $end
+$var wire 1 ;$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 $end
+$var wire 1 <$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout $end
+$var wire 1 =$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_3_result_int[2]~2_combout $end
+$var wire 1 >$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[17]~29_combout $end
+$var wire 1 ?$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[17]~28_combout $end
+$var wire 1 @$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[16]~30_combout $end
+$var wire 1 A$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout $end
+$var wire 1 B$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[16]~31_combout $end
+$var wire 1 C$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[15]~32_combout $end
+$var wire 1 D$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[15]~33_combout $end
+$var wire 1 E$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[1]~1 $end
+$var wire 1 F$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[2]~3 $end
+$var wire 1 G$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[3]~4_combout $end
+$var wire 1 H$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_3_result_int[3]~4_combout $end
+$var wire 1 I$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[18]~27_combout $end
+$var wire 1 J$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[18]~26_combout $end
+$var wire 1 K$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[3]~5 $end
+$var wire 1 L$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[4]~7_cout $end
+$var wire 1 M$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[5]~8_combout $end
+$var wire 1 N$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[23]~34_combout $end
+$var wire 1 O$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[23]~50_combout $end
+$var wire 1 P$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[22]~51_combout $end
+$var wire 1 Q$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[2]~2_combout $end
+$var wire 1 R$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[22]~35_combout $end
+$var wire 1 S$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[21]~36_combout $end
+$var wire 1 T$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_4_result_int[1]~0_combout $end
+$var wire 1 U$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[21]~37_combout $end
+$var wire 1 V$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[20]~38_combout $end
+$var wire 1 W$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[20]~39_combout $end
+$var wire 1 X$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[1]~1 $end
+$var wire 1 Y$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[2]~3 $end
+$var wire 1 Z$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[3]~5 $end
+$var wire 1 [$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[4]~7_cout $end
+$var wire 1 \$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[5]~8_combout $end
+$var wire 1 ]$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[26]~44_combout $end
+$var wire 1 ^$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[1]~0_combout $end
+$var wire 1 _$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[26]~45_combout $end
+$var wire 1 `$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[3]~4_combout $end
+$var wire 1 a$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[28]~42_combout $end
+$var wire 1 b$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[28]~49_combout $end
+$var wire 1 c$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_5_result_int[2]~2_combout $end
+$var wire 1 d$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[27]~43_combout $end
+$var wire 1 e$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[27]~52_combout $end
+$var wire 1 f$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[25]~40_combout $end
+$var wire 1 g$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[25]~41_combout $end
+$var wire 1 h$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[1]~1 $end
+$var wire 1 i$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[2]~3 $end
+$var wire 1 j$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[3]~5 $end
+$var wire 1 k$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[4]~7_cout $end
+$var wire 1 l$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[5]~8_combout $end
+$var wire 1 m$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[2]~2_combout $end
+$var wire 1 n$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[32]~47_combout $end
+$var wire 1 o$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[3]~4_combout $end
+$var wire 1 p$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[33]~48_combout $end
+$var wire 1 q$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|add_sub_6_result_int[1]~0_combout $end
+$var wire 1 r$ CONT_DUZ|display|converter|Mod0|auto_generated|divider|divider|StageOut[31]~46_combout $end
+$var wire 1 s$ CONT_DUZ|display|dec_unidade|WideOr6~0_combout $end
+$var wire 1 t$ CONT_DUZ|display|dec_unidade|WideOr5~0_combout $end
+$var wire 1 u$ CONT_DUZ|display|dec_unidade|WideOr4~0_combout $end
+$var wire 1 v$ CONT_DUZ|display|dec_unidade|WideOr3~0_combout $end
+$var wire 1 w$ CONT_DUZ|display|dec_unidade|WideOr2~0_combout $end
+$var wire 1 x$ CONT_DUZ|display|dec_unidade|WideOr1~0_combout $end
+$var wire 1 y$ CONT_DUZ|display|dec_unidade|WideOr0~0_combout $end
+$var wire 1 z$ CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~1 $end
+$var wire 1 {$ CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~3 $end
+$var wire 1 |$ CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~5 $end
+$var wire 1 }$ CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_3_result_int[4]~6_combout $end
+$var wire 1 ~$ CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_3_result_int[3]~4_combout $end
+$var wire 1 !% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[18]~27_combout $end
+$var wire 1 "% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[18]~26_combout $end
+$var wire 1 #% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_3_result_int[2]~2_combout $end
+$var wire 1 $% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[17]~29_combout $end
+$var wire 1 %% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[17]~28_combout $end
+$var wire 1 &% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[16]~30_combout $end
+$var wire 1 '% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_3_result_int[1]~0_combout $end
+$var wire 1 (% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[16]~31_combout $end
+$var wire 1 )% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[15]~32_combout $end
+$var wire 1 *% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[15]~33_combout $end
+$var wire 1 +% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[1]~1 $end
+$var wire 1 ,% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[2]~3 $end
+$var wire 1 -% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[3]~5 $end
+$var wire 1 .% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[4]~7_cout $end
+$var wire 1 /% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[5]~8_combout $end
+$var wire 1 0% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[23]~47_combout $end
+$var wire 1 1% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[3]~4_combout $end
+$var wire 1 2% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[23]~34_combout $end
+$var wire 1 3% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[22]~48_combout $end
+$var wire 1 4% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[2]~2_combout $end
+$var wire 1 5% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[22]~35_combout $end
+$var wire 1 6% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[21]~36_combout $end
+$var wire 1 7% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_4_result_int[1]~0_combout $end
+$var wire 1 8% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[21]~37_combout $end
+$var wire 1 9% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[20]~39_combout $end
+$var wire 1 :% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[20]~38_combout $end
+$var wire 1 ;% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[1]~1 $end
+$var wire 1 <% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[2]~3 $end
+$var wire 1 =% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[3]~5 $end
+$var wire 1 >% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[4]~7_cout $end
+$var wire 1 ?% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[5]~8_combout $end
+$var wire 1 @% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[28]~46_combout $end
+$var wire 1 A% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[3]~4_combout $end
+$var wire 1 B% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[28]~40_combout $end
+$var wire 1 C% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[27]~49_combout $end
+$var wire 1 D% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[2]~2_combout $end
+$var wire 1 E% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[27]~41_combout $end
+$var wire 1 F% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_5_result_int[1]~0_combout $end
+$var wire 1 G% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[26]~43_combout $end
+$var wire 1 H% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[26]~42_combout $end
+$var wire 1 I% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[25]~45_combout $end
+$var wire 1 J% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|StageOut[25]~44_combout $end
+$var wire 1 K% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[1]~1_cout $end
+$var wire 1 L% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[2]~3_cout $end
+$var wire 1 M% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[3]~5_cout $end
+$var wire 1 N% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[4]~7_cout $end
+$var wire 1 O% CONT_DUZ|display|converter|Div0|auto_generated|divider|divider|add_sub_6_result_int[5]~8_combout $end
+$var wire 1 P% CONT_DUZ|display|dec_dezena|WideOr6~0_combout $end
+$var wire 1 Q% CONT_DUZ|display|dec_dezena|WideOr5~0_combout $end
+$var wire 1 R% CONT_DUZ|display|dec_dezena|WideOr4~0_combout $end
+$var wire 1 S% CONT_DUZ|display|dec_dezena|WideOr3~0_combout $end
+$var wire 1 T% CONT_DUZ|display|dec_dezena|WideOr2~0_combout $end
+$var wire 1 U% CONT_DUZ|display|dec_dezena|WideOr1~0_combout $end
+$var wire 1 V% CONT_DUZ|display|dec_dezena|WideOr0~0_combout $end
+$var wire 1 W% GER|magazine_count [4] $end
+$var wire 1 X% GER|magazine_count [3] $end
+$var wire 1 Y% GER|magazine_count [2] $end
+$var wire 1 Z% GER|magazine_count [1] $end
+$var wire 1 [% GER|magazine_count [0] $end
+$var wire 1 \% CONT_DUZ|count [6] $end
+$var wire 1 ]% CONT_DUZ|count [5] $end
+$var wire 1 ^% CONT_DUZ|count [4] $end
+$var wire 1 _% CONT_DUZ|count [3] $end
+$var wire 1 `% CONT_DUZ|count [2] $end
+$var wire 1 a% CONT_DUZ|count [1] $end
+$var wire 1 b% CONT_DUZ|count [0] $end
+$var wire 1 c% GER|dispenser_count [5] $end
+$var wire 1 d% GER|dispenser_count [4] $end
+$var wire 1 e% GER|dispenser_count [3] $end
+$var wire 1 f% GER|dispenser_count [2] $end
+$var wire 1 g% GER|dispenser_count [1] $end
+$var wire 1 h% GER|dispenser_count [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+1+
+0,
+0.
+0-
+00
+0/
+01
+02
+03
+04
+05
+06
+07
+0>
+0=
+0<
+0;
+1:
+19
+08
+0E
+0D
+0C
+0B
+0A
+0@
+1?
+0L
+0K
+0J
+0I
+0H
+0G
+1F
+0S
+0R
+0Q
+0P
+0O
+0N
+1M
+0Z
+0Y
+0X
+0W
+0V
+0U
+1T
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0b
+1c
+xd
+1e
+1f
+1g
+zh
+zi
+zj
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+1}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+1-!
+0.!
+0/!
+00!
+01!
+12!
+13!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+1;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+1B!
+0C!
+0D!
+1E!
+1F!
+0G!
+0H!
+0I!
+0J!
+1K!
+0L!
+1M!
+1N!
+0O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+1X!
+0Y!
+1Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+1e!
+0f!
+0g!
+0h!
+1i!
+0j!
+0k!
+1l!
+0m!
+0n!
+1o!
+0p!
+0q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+1$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+06"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+0>"
+0?"
+0@"
+0A"
+0B"
+0C"
+0D"
+0E"
+0F"
+0G"
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+1O"
+1P"
+1Q"
+0R"
+0S"
+1T"
+0U"
+0V"
+1W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+1]"
+0^"
+1_"
+1`"
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+1g"
+1h"
+0i"
+1j"
+0k"
+0l"
+0m"
+0n"
+1o"
+1p"
+0q"
+0r"
+1s"
+0t"
+0u"
+1v"
+0w"
+1x"
+1y"
+0z"
+1{"
+0|"
+1}"
+1~"
+0!#
+0"#
+0##
+0$#
+0%#
+0&#
+1'#
+1(#
+1)#
+0*#
+0+#
+1,#
+1-#
+0.#
+1/#
+00#
+11#
+12#
+03#
+14#
+15#
+06#
+07#
+18#
+09#
+0:#
+1;#
+0<#
+0=#
+0>#
+0?#
+1@#
+1A#
+0B#
+0C#
+0D#
+0E#
+1F#
+1G#
+0H#
+1I#
+0J#
+1K#
+0L#
+0M#
+0N#
+0O#
+0P#
+0Q#
+0R#
+0S#
+0T#
+0U#
+0V#
+0W#
+0X#
+0Y#
+0Z#
+1[#
+0\#
+0]#
+1^#
+1_#
+1`#
+0a#
+0b#
+1c#
+0d#
+1e#
+0f#
+1g#
+1h#
+0i#
+1j#
+1k#
+0l#
+1m#
+0n#
+0o#
+0p#
+0q#
+0r#
+0s#
+1t#
+1u#
+0v#
+0w#
+0x#
+1y#
+1z#
+0{#
+1|#
+0}#
+1~#
+0!$
+0"$
+0#$
+0$$
+0%$
+0&$
+1'$
+1($
+1)$
+1*$
+0+$
+0,$
+0-$
+1.$
+0/$
+00$
+01$
+12$
+03$
+04$
+05$
+06$
+17$
+08$
+09$
+1:$
+0;$
+1<$
+1=$
+0>$
+0?$
+0@$
+1A$
+0B$
+0C$
+0D$
+0E$
+1F$
+0G$
+0H$
+0I$
+0J$
+0K$
+1L$
+1M$
+0N$
+0O$
+0P$
+1Q$
+0R$
+0S$
+1T$
+0U$
+0V$
+0W$
+0X$
+1Y$
+0Z$
+1[$
+1\$
+0]$
+1^$
+0_$
+0`$
+0a$
+0b$
+1c$
+0d$
+0e$
+0f$
+0g$
+0h$
+1i$
+0j$
+1k$
+1l$
+1m$
+0n$
+0o$
+0p$
+1q$
+0r$
+0s$
+0t$
+0u$
+0v$
+0w$
+0x$
+0y$
+0z$
+1{$
+0|$
+1}$
+0~$
+0!%
+0"%
+1#%
+0$%
+0%%
+0&%
+1'%
+0(%
+0)%
+0*%
+0+%
+1,%
+0-%
+1.%
+1/%
+00%
+01%
+02%
+03%
+14%
+05%
+06%
+17%
+08%
+09%
+0:%
+0;%
+1<%
+0=%
+1>%
+1?%
+0@%
+0A%
+0B%
+0C%
+1D%
+0E%
+1F%
+0G%
+0H%
+0I%
+0J%
+0K%
+1L%
+0M%
+1N%
+1O%
+0P%
+0Q%
+0R%
+0S%
+0T%
+0U%
+0V%
+0[%
+0Z%
+0Y%
+0X%
+0W%
+0b%
+0a%
+0`%
+0_%
+0^%
+0]%
+0\%
+0h%
+0g%
+0f%
+0e%
+0d%
+0c%
+$end
+#20000
+1*
+1C!
+1D!
+#40000
+0*
+0C!
+0D!
+#50000
+1(
+1u!
+1v!
+#60000
+1*
+1C!
+1D!
+1w!
+1x!
+#80000
+0*
+0C!
+0D!
+#100000
+1*
+1C!
+1D!
+1y!
+1z!
+#120000
+0(
+0*
+0C!
+0u!
+0D!
+0v!
+#140000
+1*
+1C!
+1D!
+1{!
+0w!
+0x!
+#160000
+0*
+0C!
+0D!
+#180000
+1*
+1C!
+1D!
+0y!
+1|!
+0z!
+#200000
+0*
+0C!
+0D!
+#220000
+1*
+1C!
+1D!
+1}!
+0{!
+1G"
+1""
+#240000
+0*
+0C!
+0D!
+#260000
+1*
+1C!
+1D!
+1H"
+1#"
+1s
+1.
+1@"
+1k
+15
+#280000
+0*
+0C!
+0D!
+#290000
+1)
+1~!
+0$"
+1%"
+0""
+#300000
+1*
+0)
+0~!
+1C!
+1D!
+1$"
+0%"
+1""
+1&"
+0#"
+0s
+1t
+0$"
+1-
+0.
+1A"
+0@"
+0k
+1l
+12
+05
+1%"
+0""
+#320000
+0*
+0C!
+0D!
+#330000
+1#
+1!"
+1$"
+1'"
+0%"
+1""
+#340000
+1*
+0#
+0!"
+1C!
+1D!
+0$"
+0'"
+1%"
+0""
+1("
+0&"
+1#"
+1s
+0t
+1$"
+0-
+1.
+1+"
+1)"
+0A"
+1@"
+1k
+0l
+02
+15
+0%"
+1""
+#360000
+0*
+0C!
+0D!
+#380000
+1*
+1C!
+1D!
+1,"
+1*"
+0("
+1="
+1;"
+0+"
+0)"
+1>"
+#400000
+0*
+0C!
+0D!
+#420000
+1*
+1C!
+1D!
+1<"
+0,"
+0*"
+1?"
+1m
+1n
+1u
+10
+1,
+17
+0@"
+1H!
+0k
+05
+#440000
+0*
+0C!
+0D!
+#450000
+1$
+1t!
+0="
+18"
+0>"
+#460000
+1*
+0$
+0t!
+1C!
+1D!
+1="
+08"
+1>"
+1I!
+1G!
+0?"
+19"
+1v
+0m
+0n
+0u
+0Z!
+1W!
+0="
+17"
+00
+0,
+07
+1/
+0H!
+1@"
+1k
+1R!
+1L!
+15
+1Y!
+1O!
+0>"
+18"
+#480000
+0*
+0C!
+0D!
+#500000
+1*
+1C!
+1D!
+1[%
+1X%
+1Y%
+1Z%
+0I!
+0G!
+1V!
+1J!
+0X!
+0s"
+1e"
+1t"
+0T"
+1M"
+1U"
+1[!
+0W!
+1S!
+1Q!
+1i"
+1d"
+0j"
+1Y"
+1L"
+0W"
+1P!
+0N!
+1|"
+1l"
+1["
+0M!
+0K!
+1%#
+1$!
+1K!
+0~"
+0}"
+0p"
+0Q"
+1T!
+1z"
+0v"
+0o"
+0e"
+0t"
+0]"
+0M"
+0U"
+0S!
+0Q!
+0'#
+1n"
+0{"
+1\"
+1N!
+1]
+1&#
+1$#
+1##
+1"#
+1!#
+1~
+1!!
+1"!
+1#!
+1%!
+1&!
+1}"
+1p"
+1Q"
+0T!
+1o"
+1[
+1\
+1^
+1_
+1`
+1a
+0##
+0"#
+0!#
+0~
+0!!
+0"!
+0_
+0`
+0a
+#520000
+0*
+0C!
+0D!
+#540000
+1*
+1C!
+1D!
+#560000
+0*
+0C!
+0D!
+#580000
+1*
+1C!
+1D!
+#600000
+0*
+0C!
+0D!
+#610000
+1!
+12"
+15"
+13"
+#620000
+1*
+0!
+02"
+1C!
+1D!
+05"
+03"
+16"
+14"
+1:"
+07"
+1B"
+0;"
+08"
+#640000
+0*
+0C!
+0D!
+#660000
+1*
+1C!
+1D!
+0<"
+06"
+04"
+1C"
+09"
+0v
+1o
+0:"
+16
+0/
+0B"
+#680000
+0*
+0C!
+0D!
+#700000
+1*
+1C!
+1D!
+0C"
+0o
+06
+#720000
+0*
+0C!
+0D!
+#730000
+1)
+1~!
+0$"
+1%"
+0""
+#740000
+1*
+0)
+0~!
+1C!
+1D!
+1$"
+0%"
+1""
+1&"
+0#"
+0s
+1t
+0$"
+1-
+0.
+1A"
+0@"
+0k
+1l
+12
+05
+1%"
+0""
+#760000
+0*
+0C!
+0D!
+#770000
+1#
+1!"
+1$"
+1'"
+0%"
+1""
+#780000
+1*
+0#
+0!"
+1C!
+1D!
+0$"
+0'"
+1%"
+0""
+1("
+0&"
+1#"
+1s
+0t
+1$"
+0-
+1.
+1+"
+1)"
+0A"
+1@"
+1k
+0l
+02
+15
+0%"
+1""
+#800000
+0*
+0C!
+0D!
+#820000
+1*
+1C!
+1D!
+1,"
+1*"
+0("
+1="
+1;"
+0+"
+0)"
+1>"
+#840000
+0*
+0C!
+0D!
+#860000
+1*
+1C!
+1D!
+1<"
+0,"
+0*"
+1?"
+1m
+1n
+1u
+10
+1,
+17
+0@"
+1H!
+0k
+05
+#880000
+0*
+0C!
+0D!
+#890000
+1$
+1t!
+0="
+18"
+0>"
+#900000
+1*
+0$
+0t!
+1C!
+1D!
+1="
+08"
+1>"
+1I!
+1G!
+0?"
+19"
+1v
+0m
+0n
+0u
+1W!
+0="
+17"
+00
+0,
+07
+1/
+0H!
+1@"
+1k
+15
+0Y!
+0>"
+18"
+#920000
+0*
+0C!
+0D!
+#930000
+1"
+1-"
+10"
+1."
+#940000
+1*
+0"
+0-"
+1C!
+1D!
+00"
+0."
+11"
+1/"
+0[%
+0I!
+0G!
+1D"
+1:"
+07"
+1'#
+1Z!
+0V!
+0J!
+1X!
+0W!
+0&#
+0%#
+0$#
+1"#
+1!!
+0#!
+0$!
+0%!
+0&!
+1m!
+0K!
+0[
+0\
+0]
+0^
+1`
+1E"
+0;"
+08"
+1p!
+1\!
+0L!
+1]!
+1j!
+1U!
+0]!
+#960000
+0*
+0C!
+0D!
+#970000
+1"
+1-"
+1."
+#980000
+1*
+0"
+0-"
+1C!
+1D!
+0."
+0<"
+01"
+1h%
+1d%
+1W%
+0Z%
+1F"
+09"
+0v
+1p
+0:"
+0l!
+1c!
+0e#
+0c#
+0/#
+0)#
+1k!
+0\!
+1r"
+1f"
+0p"
+1S"
+1N"
+0Q"
+0[!
+1T!
+0|"
+0l"
+0["
+1M!
+1K!
+13
+0/
+0E"
+1Y#
+1X#
+1W#
+1T#
+0E!
+0j!
+1'!
+1*!
+1+!
+1,!
+0m!
+0e!
+0m#
+1q#
+0;#
+17#
+0x"
+0g"
+0_"
+0O"
+0n"
+1{"
+0\"
+0N!
+1N
+1O
+1P
+1S
+1d!
+1]!
+1%#
+1$#
+0"#
+1!#
+1~
+0!!
+1#!
+1$!
+0p!
+1g!
+1n#
+1r#
+1<#
+1>#
+0y"
+0h"
+0`"
+0o"
+1]
+1^
+0`
+1a
+0]!
+1j!
+1f!
+0P"
+0}
+1{
+0i!
+1o#
+1=#
+1~"
+1|"
+0z"
+0r"
+0i"
+0Y"
+0S"
+1H
+0F
+1h!
+1c"
+1|
+0)$
+1{#
+0z#
+1v#
+0u#
+1s#
+0r#
+1H#
+0G#
+1C#
+1B#
+0A#
+0>#
+0'#
+1x"
+1v"
+1o"
+1]"
+1_"
+1G
+0j!
+1&$
+1#$
+1&#
+1##
+1"#
+1!!
+1"!
+1%!
+1.!
+11!
+1&!
+14!
+1P#
+1y"
+0}"
+1z"
+1`"
+18
+1[
+1;
+1>
+1\
+1_
+1`
+0{
+1Q#
+0~"
+0|"
+0z"
+0H
+1b"
+1y
+1Z#
+1J
+0Y#
+0W#
+1U#
+0T#
+0&#
+0%#
+0$#
+0##
+0"#
+0!#
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0'!
+1(!
+0*!
+0,!
+0-!
+0M
+0N
+0P
+1R
+0S
+0\
+0]
+0^
+0_
+0`
+0a
+#1000000

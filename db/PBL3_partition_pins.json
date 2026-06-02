@@ -1,0 +1,265 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "MOTOR",
+					"strict" : false
+				},
+				{
+					"name" : "EV",
+					"strict" : false
+				},
+				{
+					"name" : "VE",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_ROLHA",
+					"strict" : false
+				},
+				{
+					"name" : "REJEITA_GARRAFA",
+					"strict" : false
+				},
+				{
+					"name" : "INC_DUZIA",
+					"strict" : false
+				},
+				{
+					"name" : "ESTEIRA_SUJA",
+					"strict" : false
+				},
+				{
+					"name" : "LED_ALARME",
+					"strict" : false
+				},
+				{
+					"name" : "EST1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "EST1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "EST2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "EST2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_rolhas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_rolhas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_rolhas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_rolhas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_rolhas[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_rolhas[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_rolhas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_rolhas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_rolhas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_rolhas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_rolhas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_rolhas[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_rolhas[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_duzias[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_duzias[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_duzias[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_duzias[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_duzias[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_duzias[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_unidade_duzias[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_duzias[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_duzias[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_duzias[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_duzias[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_duzias[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_duzias[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dezena_duzias[6]",
+					"strict" : false
+				},
+				{
+					"name" : "GARRAFA_CHEIA",
+					"strict" : false
+				},
+				{
+					"name" : "TEM_GARRAFA",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "GARRAFA_VEDADA",
+					"strict" : false
+				},
+				{
+					"name" : "CQ_OK",
+					"strict" : false
+				},
+				{
+					"name" : "CQ_NOK",
+					"strict" : false
+				},
+				{
+					"name" : "LIMPA_SUJEIRA",
+					"strict" : false
+				},
+				{
+					"name" : "MANUAL_ADD",
+					"strict" : false
+				},
+				{
+					"name" : "MAIS_15_AUTO",
+					"strict" : false
+				},
+				{
+					"name" : "START_BTN",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

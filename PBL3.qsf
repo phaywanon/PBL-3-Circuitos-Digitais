@@ -1,0 +1,131 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+# Date created = 14:27:25  December 08, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		PBL3_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY top_fsm_toda
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:27:25  DECEMBER 08, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VERILOG_FILE fsm_enchimento.v
+set_global_assignment -name VERILOG_FILE fsm2_qualidade1.v
+set_global_assignment -name VERILOG_FILE top_fsm_toda.v
+set_location_assignment PIN_A7 -to rst_n
+set_location_assignment PIN_N5 -to clk
+set_location_assignment PIN_B8 -to START_BTN
+set_location_assignment PIN_C10 -to TEM_GARRAFA
+set_location_assignment PIN_C11 -to GARRAFA_CHEIA
+set_location_assignment PIN_D12 -to GARRAFA_VEDADA
+set_location_assignment PIN_C12 -to CQ_OK
+set_location_assignment PIN_A12 -to CQ_NOK
+set_location_assignment PIN_F15 -to LIMPA_SUJEIRA
+set_location_assignment PIN_A8 -to LED_ALARME
+set_location_assignment PIN_B11 -to MOTOR
+set_location_assignment PIN_A11 -to EV
+set_location_assignment PIN_D14 -to VE
+set_location_assignment PIN_E14 -to DEC_ROLHA
+set_location_assignment PIN_A9 -to ESTEIRA_SUJA
+set_global_assignment -name VERILOG_FILE gerencia_rolhas.v
+set_global_assignment -name VERILOG_FILE bin_to_7seg.v
+set_location_assignment PIN_J20 -to seg_dezena_disp[0]
+set_location_assignment PIN_K20 -to seg_dezena_disp[1]
+set_location_assignment PIN_L18 -to seg_dezena_disp[2]
+set_location_assignment PIN_N18 -to seg_dezena_disp[3]
+set_location_assignment PIN_M20 -to seg_dezena_disp[4]
+set_location_assignment PIN_N19 -to seg_dezena_disp[5]
+set_location_assignment PIN_N20 -to seg_dezena_disp[6]
+set_location_assignment PIN_F18 -to seg_unidade_disp[0]
+set_location_assignment PIN_E20 -to seg_unidade_disp[1]
+set_location_assignment PIN_E19 -to seg_unidade_disp[2]
+set_location_assignment PIN_J18 -to seg_unidade_disp[3]
+set_location_assignment PIN_H19 -to seg_unidade_disp[4]
+set_location_assignment PIN_F19 -to seg_unidade_disp[5]
+set_location_assignment PIN_F20 -to seg_unidade_disp[6]
+set_location_assignment PIN_C14 -to seg_unidade_rolhas[0]
+set_location_assignment PIN_E15 -to seg_unidade_rolhas[1]
+set_location_assignment PIN_C15 -to seg_unidade_rolhas[2]
+set_location_assignment PIN_C16 -to seg_unidade_rolhas[3]
+set_location_assignment PIN_E16 -to seg_unidade_rolhas[4]
+set_location_assignment PIN_D17 -to seg_unidade_rolhas[5]
+set_location_assignment PIN_C17 -to seg_unidade_rolhas[6]
+set_location_assignment PIN_C18 -to seg_dezena_rolhas[0]
+set_location_assignment PIN_D18 -to seg_dezena_rolhas[1]
+set_location_assignment PIN_E18 -to seg_dezena_rolhas[2]
+set_location_assignment PIN_B16 -to seg_dezena_rolhas[3]
+set_location_assignment PIN_A17 -to seg_dezena_rolhas[4]
+set_location_assignment PIN_A18 -to seg_dezena_rolhas[5]
+set_location_assignment PIN_B17 -to seg_dezena_rolhas[6]
+set_location_assignment PIN_D13 -to REJEITA_GARRAFA
+set_location_assignment PIN_C13 -to INC_DUZIA
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_7seg.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE pulso_1clk.v
+set_global_assignment -name VERILOG_FILE contador_duzias.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_toplevel.vwf
+set_location_assignment PIN_A14 -to MANUAL_ADD
+set_location_assignment PIN_B20 -to seg_unidade_duzias[0]
+set_location_assignment PIN_A20 -to seg_unidade_duzias[1]
+set_location_assignment PIN_B19 -to seg_unidade_duzias[2]
+set_location_assignment PIN_A21 -to seg_unidade_duzias[3]
+set_location_assignment PIN_B21 -to seg_unidade_duzias[4]
+set_location_assignment PIN_C22 -to seg_unidade_duzias[5]
+set_location_assignment PIN_B22 -to seg_unidade_duzias[6]
+set_location_assignment PIN_F21 -to seg_dezena_duzias[0]
+set_location_assignment PIN_E22 -to seg_dezena_duzias[1]
+set_location_assignment PIN_E21 -to seg_dezena_duzias[2]
+set_location_assignment PIN_C19 -to seg_dezena_duzias[3]
+set_location_assignment PIN_C20 -to seg_dezena_duzias[4]
+set_location_assignment PIN_D19 -to seg_dezena_duzias[5]
+set_location_assignment PIN_E17 -to seg_dezena_duzias[6]
+set_global_assignment -name VERILOG_FILE T_flipflop.v
+set_global_assignment -name VERILOG_FILE divfreq.v
+set_global_assignment -name VERILOG_FILE contador_garrafas.v
+set_location_assignment PIN_B14 -to MAIS_15_AUTO
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

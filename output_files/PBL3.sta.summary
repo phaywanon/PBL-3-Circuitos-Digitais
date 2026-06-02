@@ -1,0 +1,797 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : -3.341
+TNS   : -61.978
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -0.743
+TNS   : -0.743
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : -0.645
+TNS   : -0.645
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : -0.627
+TNS   : -0.627
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : -0.606
+TNS   : -0.606
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : -0.604
+TNS   : -0.604
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : -0.604
+TNS   : -0.604
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : -0.603
+TNS   : -0.603
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : -0.601
+TNS   : -0.601
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : -0.525
+TNS   : -0.525
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : -0.518
+TNS   : -0.518
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : -0.512
+TNS   : -0.512
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : -0.495
+TNS   : -0.495
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : -0.487
+TNS   : -0.487
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : -0.481
+TNS   : -0.481
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : -0.478
+TNS   : -0.478
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : -0.476
+TNS   : -0.476
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : -0.474
+TNS   : -0.474
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : -0.428
+TNS   : -0.428
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : -0.400
+TNS   : -0.400
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : -0.387
+TNS   : -0.387
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : -0.353
+TNS   : -0.353
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : 0.488
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : 0.498
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : 0.554
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : 0.555
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : 0.568
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : 0.598
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : 0.600
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : 0.603
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : 0.606
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.638
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : -1.403
+TNS   : -64.538
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : -3.011
+TNS   : -54.322
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -0.546
+TNS   : -0.546
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : -0.540
+TNS   : -0.540
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : -0.537
+TNS   : -0.537
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : -0.519
+TNS   : -0.519
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : -0.518
+TNS   : -0.518
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : -0.518
+TNS   : -0.518
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : -0.516
+TNS   : -0.516
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : -0.514
+TNS   : -0.514
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : -0.432
+TNS   : -0.432
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : -0.422
+TNS   : -0.422
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : -0.410
+TNS   : -0.410
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : -0.409
+TNS   : -0.409
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : -0.397
+TNS   : -0.397
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : -0.394
+TNS   : -0.394
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : -0.383
+TNS   : -0.383
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : -0.383
+TNS   : -0.383
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : -0.382
+TNS   : -0.382
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : -0.334
+TNS   : -0.334
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : -0.317
+TNS   : -0.317
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : -0.311
+TNS   : -0.311
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : -0.282
+TNS   : -0.282
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : 0.463
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : 0.513
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : 0.516
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : 0.534
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : 0.544
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : 0.550
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : 0.579
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : -1.403
+TNS   : -64.538
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : -0.761
+TNS   : -10.528
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.220
+TNS   : -0.220
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : 0.074
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : 0.083
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : 0.083
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : 0.084
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : 0.131
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.086
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_23|q'
+Slack : -1.000
+TNS   : -46.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_10|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_11|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_12|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_13|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_14|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_15|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_16|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_17|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_18|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_19|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_20|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_21|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_22|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_3|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_4|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_5|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_6|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_7|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_8|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq:comb_3|T_flipflop:comb_9|q'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

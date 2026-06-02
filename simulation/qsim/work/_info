@@ -1,0 +1,120 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/pbl_pp/simulation/qsim
+vbin_to_7seg
+Z1 !s110 1765224501
+!i10b 1
+!s100 BZZ8nQF]eGgWNh<D5Oh8b2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I0ANSG`oNDo@6Fz9?<>2;O0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1765224500
+Z4 8PBL3.vo
+Z5 FPBL3.vo
+!i122 0
+L0 32 2449
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1765224501.000000
+Z8 !s107 PBL3.vo|
+Z9 !s90 -work|work|PBL3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vbin_to_7seg_vlg_vec_tst
+R1
+!i10b 1
+!s100 JEYQ10<6@3JobEZe;MFd20
+R2
+ID9fQQeIKJ6GPK73=0ALXH1
+R3
+R0
+w1765224499
+8Waveform_7seg.vwf.vt
+FWaveform_7seg.vwf.vt
+!i122 1
+L0 30 63
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform_7seg.vwf.vt|
+!s90 -work|work|Waveform_7seg.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+Z12 !s110 1765337765
+!i10b 1
+!s100 1=KY>kWT9jm=m[P6fWQmF1
+IG`fDOc1b@FR:oWWgVll]L1
+R3
+Z13 d/home/usuario/pbl_pp_TERCA_LAB-20251209T234003Z-1-001/pbl_pp_TERCA_LAB/simulation/qsim
+Z14 w1765337765
+R4
+R5
+L0 7943
+Z15 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z16 !s108 1765337765.000000
+R8
+R9
+!i113 1
+R10
+R11
+vtop_fsm_toda
+R12
+!i10b 1
+!s100 Y@7R?lJLMDD7ZdZ4^OW:81
+Ik:H`Hm670>:k:B8R9W:J00
+R3
+R13
+R14
+R4
+R5
+L0 32
+R15
+r1
+!s85 0
+31
+R16
+R8
+R9
+!i113 1
+R10
+R11
+vtop_fsm_toda_vlg_vec_tst
+R12
+!i10b 1
+!s100 GV;0dE4]:d]g?eCXEO;Ug3
+I3cEoK]KoHG<96WgHDl<M`0
+R3
+R13
+w1765337764
+8Waveform_toplevel.vwf.vt
+FWaveform_toplevel.vwf.vt
+L0 30
+R15
+r1
+!s85 0
+31
+R16
+!s107 Waveform_toplevel.vwf.vt|
+!s90 -work|work|Waveform_toplevel.vwf.vt|
+!i113 1
+R10
+R11
